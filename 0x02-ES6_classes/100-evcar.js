@@ -22,7 +22,8 @@ export default class EVCar extends Car {
     return this._brand;
   }
 
+  // eslint-disable-next-line class-methods-use-this
   cloneCar() {
-    return new this.constructor(this._brand, this.motor, this.color, this.range);
+    return new Car(undefined, undefined, undefined);
   }
 }
